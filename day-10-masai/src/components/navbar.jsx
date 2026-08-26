@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
-
+import { AppContext } from "../context/AppContextProvider";
+import { useContext } from "react";
 
 const links = [
     {
@@ -8,11 +9,15 @@ const links = [
     },
     {
         to : "/about",
-        title : "Title"
+        title : "About"
     },
     {
         to: "/users",
         title: "Users"
+    },
+    {
+        to: "/login",
+        title: "Login"
     }
 ]
 function Navbar() {
@@ -32,6 +37,7 @@ function Navbar() {
         textDecoration: "none",
         color: "black"
     };
+    const {isAuth , logout} =useContext(AppContext);
 
     return (
         <div style={{ display: "flex", gap: "1rem", justifyContent: "center" }}>
@@ -47,6 +53,7 @@ function Navbar() {
                     </NavLink>
                 ))
             }
+            {isAuth && <button onClick={logout}>Logout</button>}
 
         </div>
     )

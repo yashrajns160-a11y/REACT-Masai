@@ -4,13 +4,31 @@ import Home from "./Home";
 import About from "./About";
 import SingleUser from "./SingleUserPage";
 import AllUsers from "./AllUserPage";
+import PrivateRoute from "../components/PrivateRoute";
+import Login from "./login";
 function AllRoutes() {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/users" element={<AllUsers />}/>
-            <Route path="/users/:user_id" element={<SingleUser />}/>
+            <Route path="/login" element={<Login />} />
+            <Route
+                path="/users"
+                element={
+                    <PrivateRoute>
+                        <AllUsers />
+                    </PrivateRoute>
+                }
+            />
+            <Route
+                path="/users/:user_id"
+                element={
+                    <PrivateRoute>
+                        <SingleUser />
+                    </PrivateRoute>
+                }
+            />
+            {/* <Route path="/users/:user_id" element={<SingleUser />} /> */}
             {/* :user_id means dynamic parameter. */}
         </Routes>
     )
