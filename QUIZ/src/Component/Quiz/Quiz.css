@@ -1,0 +1,90 @@
+
+/* Quiz.css */
+
+.container {
+    width: 640px;
+    margin: 80px auto;
+    background: white;
+    padding: 40px 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+    font-family: Arial, sans-serif;
+}
+
+.container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.container hr {
+    border: none;
+    height: 2px;
+    background: #ddd;
+    margin-bottom: 30px;
+}
+
+.container h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Options */
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container li {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container li:hover {
+    /* background-color: #f0f0f0; */
+    border-color: #555;
+}
+
+/* Next Button */
+.container button {
+    display: block;
+    margin: 30px auto 20px;
+    padding: 12px 40px;
+    border: none;
+    border-radius: 6px;
+    background-color:#553f9a;;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.container button:hover {
+    background-color: rgb(34, 113, 248);
+}
+
+/* Question number */
+.index {
+    text-align: center;
+    color: #777;
+    font-size: 15px;
+}
+.correct .index {
+    margin: auto;
+    font-size: 18px;
+}
+.container .correct {
+    background: #a1f4d3;
+    border-color: #00d397;
+}
+.container .wrong {
+    background: #f88787;
+    border-color: #FF4A4A;
+}
