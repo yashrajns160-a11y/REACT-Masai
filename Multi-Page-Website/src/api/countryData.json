@@ -1,0 +1,59 @@
+
+[
+  {
+    "id": 1,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": 1430000000,
+    "interestingFact": "India is the world's largest democracy and is home to the Taj Mahal."
+  },
+  {
+    "id": 2,
+    "countryName": "United States",
+    "capital": "Washington, D.C.",
+    "population": 340000000,
+    "interestingFact": "The United States has 50 states and is home to the Grand Canyon."
+  },
+  {
+    "id": 3,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": 124000000,
+    "interestingFact": "Japan is made up of thousands of islands and is famous for Mount Fuji."
+  },
+  {
+    "id": 4,
+    "countryName": "France",
+    "capital": "Paris",
+    "population": 68000000,
+    "interestingFact": "France is home to the Eiffel Tower and is famous for its art and cuisine."
+  },
+  {
+    "id": 5,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": 27000000,
+    "interestingFact": "Australia is the only country that occupies an entire continent."
+  },
+  {
+    "id": 6,
+    "countryName": "Brazil",
+    "capital": "Brasilia",
+    "population": 212000000,
+    "interestingFact": "Brazil contains most of the Amazon rainforest, one of the world's richest ecosystems."
+  },
+  {
+    "id": 7,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": 41000000,
+    "interestingFact": "Canada has the longest coastline of any country in the world."
+  },
+  {
+    "id": 8,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": 84000000,
+    "interestingFact": "Germany is famous for its engineering, historic castles, and Oktoberfest."
+  }
+]

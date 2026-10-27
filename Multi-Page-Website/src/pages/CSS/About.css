@@ -1,0 +1,126 @@
+
+/* About section */
+.section-about {
+  padding-top: 60px;
+  padding-bottom: 80px;
+}
+
+/* Section heading */
+.container-title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  line-height: 1.3;
+  color: #fff;
+  margin-bottom: 45px;
+}
+
+/* Responsive cards grid */
+.gradient-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* Card wrapper */
+.card {
+  min-width: 0;
+  display: flex;
+}
+
+/* Card design */
+.container-card {
+  width: 100%;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  border: 1px solid rgba(97, 218, 251, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Blue gradient background */
+.bg-blue-box {
+  background: linear-gradient(
+    135deg,
+    #20232a 0%,
+    #26384a 55%,
+    #164e63 100%
+  );
+  color: #f1f5f9;
+}
+
+/* Hover effect */
+.container-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(22, 78, 99, 0.2);
+}
+
+/* Country name */
+.card-title {
+  font-size: 23px;
+  font-weight: 700;
+  color: #61dafb;
+  margin: 0 0 22px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  overflow-wrap: anywhere;
+}
+
+/* Country details */
+.container-card p:not(.card-title) {
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 12px 0;
+  overflow-wrap: anywhere;
+}
+
+/* Detail labels */
+.card-description {
+  display: Inline;
+  font-weight: 700;
+  color: #93c5fd;
+  margin-bottom: 3px;
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .gradient-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .section-about {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .gradient-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .section-about {
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+
+  .container-title {
+    margin-bottom: 28px;
+  }
+
+  .container-card {
+    padding: 24px 20px;
+  }
+
+  .card-title {
+    font-size: 21px;
+  }
+
+  .container-card p:not(.card-title) {
+    font-size: 14px;
+  }
+}
