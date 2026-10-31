@@ -39,7 +39,7 @@ li {
   list-style: none;
 }
 
-button {
+/* button {
   display: flex;
   gap: 1.2rem;
   align-items: center;
@@ -61,7 +61,7 @@ button {
   -moz-border-radius: 1.5rem;
   -ms-border-radius: 1.5rem;
   margin-top: 1.6rem;
-}
+} */
 
 /* Container */
 .container {
