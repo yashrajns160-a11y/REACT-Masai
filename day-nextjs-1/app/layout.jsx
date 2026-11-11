@@ -11,13 +11,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header className="bg-gray-900 text-white shadow-lg">
+        {/* <header className="bg-gray-900 text-white shadow-lg">
           My Root Header
-        </header>
+        </header> */}
         {children}
-        <footer className="bg-gray-900 text-white shadow-lg">
+        {/* <footer className="bg-gray-900 text-white shadow-lg">
           Footer details
-        </footer>
+        </footer> */}
       </body>
     </html>
   );
