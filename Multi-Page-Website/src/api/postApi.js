@@ -7,25 +7,21 @@ const api = axios.create({
   },
 });
 
-// GET method
-export const getCountryData = () => {
+// HTTP GET method to fetch a list of countries
+export const getCountryData = (limit = 50) => {
   return api.get("", {
     params: {
-      limit: 25,
+      limit,
     },
   });
 };
 
-//HTTP GET method for the individual country name
+// HTTP GET method to fetch an individual country by common name or query
 export const getCountryIndData = (name) => {
-
   return api.get("", {
     params: {
+      q: name,
       "names.common": name,
-    }
-  })
-}
-// POST method (for APIs that support creating data)
-export const createData = (url, data) => {
-  return axios.post(url, data);
+    },
+  });
 };

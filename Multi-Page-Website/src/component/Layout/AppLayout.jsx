@@ -4,9 +4,11 @@ import { Header } from "../Ui/Header";
 
 export const AppLayout = () => {
   return (
-    <div>
+    <div className="app-layout">
       <Header />
-      <Outlet />
+      <main className="main-content">
+        <Outlet />
+      </main>
       <Footer />
     </div>
   );

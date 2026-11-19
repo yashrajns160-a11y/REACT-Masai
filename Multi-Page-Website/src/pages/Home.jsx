@@ -1,35 +1,34 @@
 import { FaLongArrowAltRight } from "react-icons/fa";
-import "./CSS/Home.css"
+import { NavLink } from "react-router-dom";
+import "./CSS/Home.css";
 import { About } from "./About";
 
 export const Home = () => {
-
     return (
         <main className="hero-section main container">
             <div className="container grid grid-two-cols">
-
                 <div className="hero-content">
                     <h1 className="heading-xl">
                         Explore the World, One Country at a Time.
                     </h1>
                     <p className="paragraph">
-                        Discover the history, culture, and beauty od every nation.Sort,
-                        search ,and filter through countries to find the details you want.
+                        Discover the history, culture, and beauty of every nation. Sort,
+                        search, and filter through countries to find the details you want.
                     </p>
-                    <button className="btn btn-darken btn-inline bg-white-box">
+                    <NavLink to="/country" className="btn btn-darken btn-inline bg-white-box">
                         Start Exploring <FaLongArrowAltRight />
-                    </button>
+                    </NavLink>
                 </div>
                 <div className="hero-image">
                     <img
                         src="/images/World-Map.png"
-                        alt="worldimage"
+                        alt="Illustration of the World Map"
                         className="banner-image"
                     />
                 </div>
             </div>
-            {/* after home page we are using about page */}
+            {/* About section included on the home page */}
             <About />
         </main>
-    )
-}
+    );
+};

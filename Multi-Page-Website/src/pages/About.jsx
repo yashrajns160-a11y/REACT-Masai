@@ -1,8 +1,7 @@
 import countryFacts from "../api/countryData.json";
-import "./CSS/About.css"
+import "./CSS/About.css";
 
 export const About = () => {
-
     return (
         <section className="section-about container">
             <h2 className="container-title">
@@ -11,32 +10,29 @@ export const About = () => {
                 we're proud of
             </h2>
             <div className="gradient-cards">
-                {
-                    countryFacts.map((country) => {
-                        // const {id, countryName, capital, population, interesingFact} = country;
-                        return (
-                            <div className="card" key={country.id}>
-                                <div className="container-card bg-blue-box">
-                                    <p className="card-title">{country.countryName}</p>
-                                    <p>
-                                        <span className="card-description">Capital:</span>
-                                        {" "}{country.capital}
-                                    </p>
-                                    <p>
-                                        <span className="card-description">Population:</span>
-                                        {" "}{country.population}
-                                    </p>
-                                    <p>
-                                        <span className="card-description">InterestingFacts:</span>
-                                        {" "} {country.interestingFact}
-                                    </p>
-
-                                </div>
+                {countryFacts.map((country) => {
+                    const { id, countryName, capital, population, interestingFact } = country;
+                    return (
+                        <div className="card" key={id}>
+                            <div className="container-card bg-blue-box">
+                                <p className="card-title">{countryName}</p>
+                                <p>
+                                    <span className="card-description">Capital:</span>{" "}
+                                    {capital}
+                                </p>
+                                <p>
+                                    <span className="card-description">Population:</span>{" "}
+                                    {population.toLocaleString()}
+                                </p>
+                                <p>
+                                    <span className="card-description">Interesting Fact:</span>{" "}
+                                    {interestingFact}
+                                </p>
                             </div>
-                        )
-                    })
-                }
+                        </div>
+                    );
+                })}
             </div>
         </section>
-    )
-}
+    );
+};

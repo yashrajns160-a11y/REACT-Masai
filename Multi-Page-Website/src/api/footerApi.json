@@ -1,18 +1,17 @@
-
 [
-    {
-        "icon":"MdPlace",
-        "title":"Find us",
-        "details":"Lucknow, Utter Pradesh"
-    },
-    {
-        "icon":"IoCallSharp",
-        "title":"Call us",
-        "details":"7275637206"
-    },
-    {
-        "icon":"TbMailPlus",
-        "title":"Mail us",
-        "details":"yashraj@gmail.com"
-    }
+  {
+    "icon": "MdPlace",
+    "title": "Find us",
+    "details": "Lucknow, Uttar Pradesh"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call us",
+    "details": "+91 12345 67890"
+  },
+  {
+    "icon": "TbMailPlus",
+    "title": "Mail us",
+    "details": "contact@worldatlas.com"
+  }
 ]
